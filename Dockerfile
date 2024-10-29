@@ -1,8 +1,10 @@
 FROM amazoncorretto:17-alpine
 
+MAINTAINER "Akulich Andrei"
+
 WORKDIR /app
 
-COPY target/your-application.jar /app/app.jar
+COPY build/libs/cloud-config-0.1.0-SNAPSHOT.jar /app/app.jar
 
 ENV JAVA_OPTS=""
 
